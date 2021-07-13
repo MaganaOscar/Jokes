@@ -1,0 +1,374 @@
+POST http://localhost:8000/api/jokes: {
+  "Network": {
+    "addresses": {
+      "local": {
+        "address": "::1",
+        "family": "IPv6",
+        "port": 55400
+      },
+      "remote": {
+        "address": "::1",
+        "family": "IPv6",
+        "port": 8000
+      }
+    }
+  },
+  "Request Headers": {
+    "user-agent": "PostmanRuntime/7.28.1",
+    "accept": "*/*",
+    "postman-token": "516e5464-89b4-442f-9c97-516762640b41",
+    "host": "localhost:8000",
+    "accept-encoding": "gzip, deflate, br",
+    "connection": "keep-alive",
+    "content-type": "multipart/form-data; boundary=--------------------------032600491405501842059189",
+    "content-length": "316"
+  },
+  "Request Body": {
+    "setup": "Why did Sally fall off the swing?",
+    "punchline": "She had no arms"
+  },
+  "Response Headers": {
+    "x-powered-by": "Express",
+    "content-type": "application/json; charset=utf-8",
+    "content-length": "131",
+    "etag": "W/\"83-tf38tNhWHjRP7sdc37PE8Kbpx1s\"",
+    "date": "Tue, 13 Jul 2021 19:14:23 GMT",
+    "connection": "keep-alive",
+    "keep-alive": "timeout=5"
+  },
+  "Response Body": "{\"joke\":{\"_id\":\"60ede60f35b33133e090aa98\",\"created_at\":\"2021-07-13T19:14:23.947Z\",\"updated_at\":\"2021-07-13T19:14:23.948Z\",\"__v\":0}}"
+}
+DELETE http://localhost:8000/api/jokes/60ede60f35b33133e090aa98: {
+  "Network": {
+    "addresses": {
+      "local": {
+        "address": "::1",
+        "family": "IPv6",
+        "port": 57547
+      },
+      "remote": {
+        "address": "::1",
+        "family": "IPv6",
+        "port": 8000
+      }
+    }
+  },
+  "Request Headers": {
+    "user-agent": "PostmanRuntime/7.28.1",
+    "accept": "*/*",
+    "postman-token": "235e2c66-da9f-4059-a8d2-f9018000907b",
+    "host": "localhost:8000",
+    "accept-encoding": "gzip, deflate, br",
+    "connection": "keep-alive"
+  },
+  "Request Body": {
+    "setup": "Why did Sally fall off the swing?",
+    "punchline": "She had no arms"
+  },
+  "Response Headers": {
+    "x-powered-by": "Express",
+    "content-type": "application/json; charset=utf-8",
+    "content-length": "42",
+    "etag": "W/\"2a-F51sDbf9pAxJNDkPu1ezZziL3vs\"",
+    "date": "Tue, 13 Jul 2021 19:16:40 GMT",
+    "connection": "keep-alive",
+    "keep-alive": "timeout=5"
+  },
+  "Response Body": "{\"result\":{\"n\":1,\"ok\":1,\"deletedCount\":1}}"
+}
+POST http://localhost:8000/api/jokes: {
+  "Network": {
+    "addresses": {
+      "local": {
+        "address": "::1",
+        "family": "IPv6",
+        "port": 60407
+      },
+      "remote": {
+        "address": "::1",
+        "family": "IPv6",
+        "port": 8000
+      }
+    }
+  },
+  "Request Headers": {
+    "content-type": "text/plain",
+    "user-agent": "PostmanRuntime/7.28.1",
+    "accept": "*/*",
+    "postman-token": "ecaae508-6595-4d80-803a-bd5a0319dd96",
+    "host": "localhost:8000",
+    "accept-encoding": "gzip, deflate, br",
+    "connection": "keep-alive",
+    "content-length": "91"
+  },
+  "Request Body": "{\r\n    \"setup\": \"Why did Sally fall off the swing?\",\r\n    \"punchline\": \"She had no arms\"\r\n}",
+  "Response Headers": {
+    "x-powered-by": "Express",
+    "content-type": "application/json; charset=utf-8",
+    "content-length": "131",
+    "etag": "W/\"83-WIMSVAxLAdRURHELNSvtf8Lmmzs\"",
+    "date": "Tue, 13 Jul 2021 19:22:14 GMT",
+    "connection": "keep-alive",
+    "keep-alive": "timeout=5"
+  },
+  "Response Body": "{\"joke\":{\"_id\":\"60ede7e68d42ce20f4cb2cc7\",\"created_at\":\"2021-07-13T19:22:14.423Z\",\"updated_at\":\"2021-07-13T19:22:14.423Z\",\"__v\":0}}"
+}
+DELETE http://localhost:8000/api/jokes/60ede7e68d42ce20f4cb2cc7: {
+  "Network": {
+    "addresses": {
+      "local": {
+        "address": "::1",
+        "family": "IPv6",
+        "port": 60414
+      },
+      "remote": {
+        "address": "::1",
+        "family": "IPv6",
+        "port": 8000
+      }
+    }
+  },
+  "Request Headers": {
+    "content-type": "text/plain",
+    "user-agent": "PostmanRuntime/7.28.1",
+    "accept": "*/*",
+    "postman-token": "3c1f47f9-a071-44a0-adb8-75b3d7c98f2e",
+    "host": "localhost:8000",
+    "accept-encoding": "gzip, deflate, br",
+    "connection": "keep-alive",
+    "content-length": "91"
+  },
+  "Request Body": "{\r\n    \"setup\": \"Why did Sally fall off the swing?\",\r\n    \"punchline\": \"She had no arms\"\r\n}",
+  "Response Headers": {
+    "x-powered-by": "Express",
+    "content-type": "application/json; charset=utf-8",
+    "content-length": "42",
+    "etag": "W/\"2a-F51sDbf9pAxJNDkPu1ezZziL3vs\"",
+    "date": "Tue, 13 Jul 2021 19:22:56 GMT",
+    "connection": "keep-alive",
+    "keep-alive": "timeout=5"
+  },
+  "Response Body": "{\"result\":{\"n\":1,\"ok\":1,\"deletedCount\":1}}"
+}
+POST http://localhost:8000/api/jokes: {
+  "Network": {
+    "addresses": {
+      "local": {
+        "address": "::1",
+        "family": "IPv6",
+        "port": 60417
+      },
+      "remote": {
+        "address": "::1",
+        "family": "IPv6",
+        "port": 8000
+      }
+    }
+  },
+  "Request Headers": {
+    "content-type": "text/plain",
+    "user-agent": "PostmanRuntime/7.28.1",
+    "accept": "*/*",
+    "postman-token": "657d7423-b6d7-457a-93b8-2c810db17253",
+    "host": "localhost:8000",
+    "accept-encoding": "gzip, deflate, br",
+    "connection": "keep-alive",
+    "content-length": "87"
+  },
+  "Request Body": "{\r\n    setup: \"Why did Sally fall off the swing?\",\r\n    punchline: \"She had no arms\"\r\n}",
+  "Response Headers": {
+    "x-powered-by": "Express",
+    "content-type": "application/json; charset=utf-8",
+    "content-length": "131",
+    "etag": "W/\"83-27ir1IC5z/nmP5j1kwnTRjD+FsU\"",
+    "date": "Tue, 13 Jul 2021 19:23:21 GMT",
+    "connection": "keep-alive",
+    "keep-alive": "timeout=5"
+  },
+  "Response Body": "{\"joke\":{\"_id\":\"60ede8298d42ce20f4cb2cca\",\"created_at\":\"2021-07-13T19:23:21.050Z\",\"updated_at\":\"2021-07-13T19:23:21.050Z\",\"__v\":0}}"
+}
+POST http://localhost:8000/api/jokes: {
+  "Network": {
+    "addresses": {
+      "local": {
+        "address": "::1",
+        "family": "IPv6",
+        "port": 63599
+      },
+      "remote": {
+        "address": "::1",
+        "family": "IPv6",
+        "port": 8000
+      }
+    }
+  },
+  "Request Headers": {
+    "content-type": "text/plain",
+    "user-agent": "PostmanRuntime/7.28.1",
+    "accept": "*/*",
+    "postman-token": "76f6a107-85e6-4954-9131-b7a3e368afbc",
+    "host": "localhost:8000",
+    "accept-encoding": "gzip, deflate, br",
+    "connection": "keep-alive",
+    "content-length": "88"
+  },
+  "Request Body": "{\r\n    setup: \"Why did Sally fall off the swing?\",\r\n    punchline: \"She had no arams\"\r\n}",
+  "Response Headers": {
+    "x-powered-by": "Express",
+    "content-type": "application/json; charset=utf-8",
+    "content-length": "131",
+    "etag": "W/\"83-jLJDF0/JKBws+ggBfOYXFAUvz98\"",
+    "date": "Tue, 13 Jul 2021 19:29:55 GMT",
+    "connection": "keep-alive",
+    "keep-alive": "timeout=5"
+  },
+  "Response Body": "{\"joke\":{\"_id\":\"60ede9b308e6ba51c86254e2\",\"created_at\":\"2021-07-13T19:29:55.003Z\",\"updated_at\":\"2021-07-13T19:29:55.004Z\",\"__v\":0}}"
+}
+DELETE http://localhost:8000/api/jokes/60ede8298d42ce20f4cb2cca: {
+  "Network": {
+    "addresses": {
+      "local": {
+        "address": "::1",
+        "family": "IPv6",
+        "port": 49349
+      },
+      "remote": {
+        "address": "::1",
+        "family": "IPv6",
+        "port": 8000
+      }
+    }
+  },
+  "Request Headers": {
+    "content-type": "application/json",
+    "user-agent": "PostmanRuntime/7.28.1",
+    "accept": "*/*",
+    "postman-token": "c5324698-4679-45ae-a2b4-299b493d17cc",
+    "host": "localhost:8000",
+    "accept-encoding": "gzip, deflate, br",
+    "connection": "keep-alive",
+    "content-length": "92"
+  },
+  "Request Body": "{\r\n    \"setup\": \"Why did Sally fall off the swing?\",\r\n    \"punchline\": \"She had no arams\"\r\n}",
+  "Response Headers": {
+    "x-powered-by": "Express",
+    "content-type": "application/json; charset=utf-8",
+    "content-length": "42",
+    "etag": "W/\"2a-F51sDbf9pAxJNDkPu1ezZziL3vs\"",
+    "date": "Tue, 13 Jul 2021 19:34:55 GMT",
+    "connection": "keep-alive",
+    "keep-alive": "timeout=5"
+  },
+  "Response Body": "{\"result\":{\"n\":1,\"ok\":1,\"deletedCount\":1}}"
+}
+DELETE http://localhost:8000/api/jokes/60ede9b308e6ba51c86254e2: {
+  "Network": {
+    "addresses": {
+      "local": {
+        "address": "::1",
+        "family": "IPv6",
+        "port": 64443
+      },
+      "remote": {
+        "address": "::1",
+        "family": "IPv6",
+        "port": 8000
+      }
+    }
+  },
+  "Request Headers": {
+    "content-type": "application/json",
+    "user-agent": "PostmanRuntime/7.28.1",
+    "accept": "*/*",
+    "postman-token": "cdb81ccc-cfe6-4342-88ed-4caa16359aaa",
+    "host": "localhost:8000",
+    "accept-encoding": "gzip, deflate, br",
+    "connection": "keep-alive",
+    "content-length": "92"
+  },
+  "Request Body": "{\r\n    \"setup\": \"Why did Sally fall off the swing?\",\r\n    \"punchline\": \"She had no arams\"\r\n}",
+  "Response Headers": {
+    "x-powered-by": "Express",
+    "content-type": "application/json; charset=utf-8",
+    "content-length": "42",
+    "etag": "W/\"2a-F51sDbf9pAxJNDkPu1ezZziL3vs\"",
+    "date": "Tue, 13 Jul 2021 19:35:09 GMT",
+    "connection": "keep-alive",
+    "keep-alive": "timeout=5"
+  },
+  "Response Body": "{\"result\":{\"n\":1,\"ok\":1,\"deletedCount\":1}}"
+}
+POST http://localhost:8000/api/jokes/: {
+  "Network": {
+    "addresses": {
+      "local": {
+        "address": "::1",
+        "family": "IPv6",
+        "port": 64445
+      },
+      "remote": {
+        "address": "::1",
+        "family": "IPv6",
+        "port": 8000
+      }
+    }
+  },
+  "Request Headers": {
+    "content-type": "application/json",
+    "user-agent": "PostmanRuntime/7.28.1",
+    "accept": "*/*",
+    "postman-token": "e7cf517f-90c3-4562-ab11-54c15feba42f",
+    "host": "localhost:8000",
+    "accept-encoding": "gzip, deflate, br",
+    "connection": "keep-alive",
+    "content-length": "92"
+  },
+  "Request Body": "{\r\n    \"setup\": \"Why did Sally fall off the swing?\",\r\n    \"punchline\": \"She had no arams\"\r\n}",
+  "Response Headers": {
+    "x-powered-by": "Express",
+    "content-type": "application/json; charset=utf-8",
+    "content-length": "206",
+    "etag": "W/\"ce-Fc0TyBffRPdiHeiLyfhEXzMsgck\"",
+    "date": "Tue, 13 Jul 2021 19:35:28 GMT",
+    "connection": "keep-alive",
+    "keep-alive": "timeout=5"
+  },
+  "Response Body": "{\"joke\":{\"_id\":\"60edeb0008e6ba51c86254e8\",\"setup\":\"Why did Sally fall off the swing?\",\"punchline\":\"She had no arams\",\"created_at\":\"2021-07-13T19:35:28.991Z\",\"updated_at\":\"2021-07-13T19:35:28.991Z\",\"__v\":0}}"
+}
+PUT http://localhost:8000/api/jokes/60edeb0008e6ba51c86254e8: {
+  "Network": {
+    "addresses": {
+      "local": {
+        "address": "::1",
+        "family": "IPv6",
+        "port": 60512
+      },
+      "remote": {
+        "address": "::1",
+        "family": "IPv6",
+        "port": 8000
+      }
+    }
+  },
+  "Request Headers": {
+    "content-type": "application/json",
+    "user-agent": "PostmanRuntime/7.28.1",
+    "accept": "*/*",
+    "postman-token": "f6480ce6-3a7c-475c-8049-48d961c3dfc3",
+    "host": "localhost:8000",
+    "accept-encoding": "gzip, deflate, br",
+    "connection": "keep-alive",
+    "content-length": "40"
+  },
+  "Request Body": "{\r\n    \"punchline\": \"She had no arms\"\r\n}",
+  "Response Headers": {
+    "x-powered-by": "Express",
+    "content-type": "application/json; charset=utf-8",
+    "content-length": "205",
+    "etag": "W/\"cd-vQAqGhX6/KP7JnPCg++4U60m/Zw\"",
+    "date": "Tue, 13 Jul 2021 19:37:01 GMT",
+    "connection": "keep-alive",
+    "keep-alive": "timeout=5"
+  },
+  "Response Body": "{\"joke\":{\"_id\":\"60edeb0008e6ba51c86254e8\",\"setup\":\"Why did Sally fall off the swing?\",\"punchline\":\"She had no arms\",\"created_at\":\"2021-07-13T19:35:28.991Z\",\"updated_at\":\"2021-07-13T19:35:28.991Z\",\"__v\":0}}"
+}
